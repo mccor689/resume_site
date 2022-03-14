@@ -1,5 +1,5 @@
 body {
-    background: lightgray;
+    background: rgb(238, 243, 252);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .mytabs label {
     padding: 25px;
-    background: rgb(185, 184, 184);
+    background: rgb(204, 204, 204);
     font-weight: bold;
 }
 
