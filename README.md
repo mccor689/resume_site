@@ -8,7 +8,7 @@
 - Python
     - To Download Python: https://www.python.org/downloads/
 
-## How to Run the Site
+## How to run the site
 
 ##### Recommended: create a new folder
 In terminal:
