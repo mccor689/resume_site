@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+            <meta charset="UTF-8">
+    	    <link rel="stylesheet" type="text/css" href="src/front.css" />
+            <title>Ryan McCormick</title>
+	</head>
+	<body>
+        <div class="personal">
+            Ryan McCormick - mccor689@umn.edu - ryanmc505@gmail.com - (612) 232-1105
+        </div>
+    	<div class="mytabs">
+            <input type="radio" id="tabBio" name="mytabs" checked="checked">
+            <label for="tabBio">Bio</label>
+            <div class="tab">
+                <h2>Bio</h2>
+                <p>I am Ryan McCormick. (I am on the right)</p>
+                <div class="image-container">
+                    <img src="./imageOfMe.jpg" width=20% height=20%>
+                </div>
+                <p>
+                    I am a Computer Science student at the University of Minnesota.  I graduated high school in 2020 
+                    and I am expecting to graduate in December of 2022.
+                </p>
+                <p>
+                    I am a big fan of the Minnesota Timberwolves (the image is at one of their games).
+                </p>
+                <p>
+                    In my spare time I like to work on coding projects (such as this one) and spending time with family and friends.
+                </p>
+            </div>
+
+            <input type="radio" id="tabWork" name="mytabs">
+            <label for="tabWork">Work History</label>
+            <div class="tab">
+                <h1>Work History</h1>
+                <p>
+                    I do not have internship experience yet, but I included this section to show a little 
+                    about responsibilites I have had in my past work experience.
+                </p>
+                <h3>AtHome Decor Superstore</h3>
+                <p>
+                    When working at AtHome, my responsibilites included everything in a retail store.  
+                    I would cashieer, stock items, clean floors, etc.  My role was not clearly defined,
+                    all I needed to do was make sure the store was up to the customers' expectations.
+                </p>
+                <h3>Amazon</h3>
+                <p>
+                    I worked in an Amazon warehouse using their technologies to pick packages to be shipped.  
+                    The work was focused on completing lists given to me with an appropriate speed and never 
+                    improperly selecting items.
+                </p>
+                <h3>Menards</h3>
+                <p>
+                    I worked in the paint and food department at Menards.  I used their systems to read paint colors 
+                    and create the correct paint color for customers.  For the food section of Menards, I would 
+                    inspect products to remove expired food and stock the sections needing products.
+                </p>
+                <h3>HyVee</h3>
+                <p>
+                    I stocked produce at HyVee.  Stocking produce requires attention to the quality of produce items 
+                    as they are placed out for the customers.  Along with quality assurance, I would aid my team in 
+                    unloading trucks as they delivered products and bring them to the cooler for storage.
+                </p>
+            </div>
+
+            <input type="radio" id="tab3" name="mytabs">
+            <label for="tab3">Courses</label>
+            <div class="tab">
+                <h1>Technical Courses I Have Taken Through the University of Minnesota</h1>
+                <h3>
+                    CSCI 3081w - Program Design and Development
+                </h3>
+                <p>
+                    This course is teaching me many important skills for working in the computer science industry.  
+                    The focus of this course is to build professional system designing habits and to complete labs 
+                    using modern technologies (Docker, API's, etc).
+                </p>
+                <h3>
+                    CSCI 5801 - Software Engineering
+                </h3>
+                <p>
+                    This project based course focuses on the engineering process that goes into software engineering.  
+                    The first half of the class is spent learning how to write requirements and how to design a system 
+                    that will fulfill customer needs and the second half is spent building the system from the requirements.
+                </p>
+                <h3>
+                    CSCI 2041 - Advanced Programming
+                </h3>
+                <p>
+                    This course focused on teaching students how to apply the principles learned throughout our education in 
+                    our programming.  The course was taught in the OCaml language to teach us how to familiarize ourselfs with 
+                    new syntaxes.  I finished this course as a well rounded programmer.
+                </p>
+                <h3>
+                    CSCI 2021 - Machine Architecture
+                </h3>
+                <p>
+                    This course focused on the architecture of computers so the students can progress with knowledge of how the 
+                    computer works.  For example: knowing how memory caching works can lead to writing more time efficient code.
+                </p>
+                <h3>
+                    CSCI 4061 - Operating Systems
+                </h3>
+                <p>
+                    CSCI 4061 is teaching me how code interacts with the operating system and how I can use the C programming language 
+                    to make low level calls to the operating system.
+                </p>
+                <h3>
+                    CSCI 4041 (and 5421) - Algorithms and Data Structures
+                </h3>
+                <p>
+                    The two courses are focused on both algorithms and data structures.  By studying algorithms, I am learning what faster 
+                    approaches there are to solving problems and learning how to use these algorithms.
+                </p>
+                <h3>
+                    CSCI 2033 - Linear Algebra
+                </h3>
+                <p>
+                    Linear algebra taught me the math used to manipulate matricies for computer graphics and other applications of matricies 
+                    and linear combinations.
+                </p>
+                <h3>
+                    CSCI 4511w - Artificial Intelligence
+                </h3>
+                <p>
+                    This writing intensive course is focused on teaching us how to use common algorithms in artificial intelligence and 
+                    how artificial intelligence systems are designed.
+                </p>
+            </div>
+
+            <input type="radio" id="tab4" name="mytabs">
+            <label for="tab4">NBA API</label>
+            <div class="tab">
+                <h1>Use an API I Created</h1>
+                <button type="button" onclick="update_games()">Call API to Display Games</button>
+                <p>What NBA games are today?   (using the CBS Sports NBA scoreboard)</p>
+                <div id="feed"></div>
+                <script src="src/frontend.js"></script>
+            </div>
+
+            <input type="radio" id="tab5" name="mytabs">
+            <label for="tab5">Games</label>
+            <div class="tab">
+                <h1>Games By Ryan</h1>
+                <script src="src/frontend.js"></script>
+                <h3>Star Chase</h3>
+                <p>This game is Star Chase.  The objective of this game is to move the star character into the green squares while avoiding the red squares.</p>
+                <p>This game has persistent storage for the high score by writing to and reading a file.</p>
+                <button type="button" onclick="star_game()">Play Star Chase</button>
+                <h3>Farkle</h3>
+                <p>This game is Farkle.  The goal of farkle is to be the first player to reach 10,000 points.  The scoring is strange to first time players and there are some special cases.</p>
+                <p>• 1's are worth 100, 5's are worth 50</p>
+                <p>• Three of any one number in a single roll is worth the number times 100 (three 1's = 1,000)</p>
+                <p>• A straight (123456) on a single roll is worth 1,000</p>
+                <p>• If all dice score points then you get to reroll all dice adding on to the roll total</p>
+                <p>If your roll has no scoring dice, then you lose all accumulated points that turn, Farkle!</p>
+                <button type="button" onclick="farkle()">Play Farkle</button>
+
+            </div>
+            <input type="radio" id="tab6" name="mytabs">
+            <label for="tab6">Design</label>
+            <div class="tab">
+                <h2>How Does This Work?</h2>
+                <p>This project is built using two sides: a front and back.</p>
+                <h3>Backend</h3>
+                <p>
+                    The backend is a NodeJS file that can locally run on a computer.  
+                    The backend uses the Cheerio and Axios modules scrape a website for NBA data and returns the matchups found on the website.  The backend also 
+                    uses the child_process module to create a child process when calling python files.  Both games are written in python using the PyGames library, 
+                    so the previous module is used to run the games.
+                </p>
+                <h3>Frontend</h3>
+                <p>
+                    The frontend uses HTML and CSS to create this page seen and Javascript to call the backend and edit the page seen.  The scripting makes calls to 
+                    the backend to run the games and to pull data from the web scraper.
+                </p>
+            </div>
+        </div>
+	</body>
+</html>
