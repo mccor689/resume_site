@@ -20,7 +20,7 @@ In terminal:
 In desired file location, run these commands
 
     ```
-    git clone https://github.com/mccor689/res_site
+    git clone https://github.com/mccor689/resume_site
     cd resume_site/backend
     npm install express | npm install axios | npm install cheerio | npm install cors | npm install child_process
     pip install pygame
