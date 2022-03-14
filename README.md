@@ -1,13 +1,23 @@
 # resume_site
 
-Things needed:
-- git
-- nodejs
-- python
+## Things needed:
+- Git
+    - To Download Git: https://git-scm.com/downloads
+- Node.js
+    - To Download Node.js: https://nodejs.org/en/download/
+- Python
+    - To Download Python: https://www.python.org/downloads/
 
-calls to run the site
+## How to Run the Site
 
-in a new folder:
+##### Recommended: create a new folder
+In terminal:
+
+    ```
+    cd <path to folder>
+    ```
+
+In desired file location, run these commands
 
     ```
     git clone https://github.com/mccor689/res_site
@@ -17,4 +27,8 @@ in a new folder:
     node backend.js
     ```
     
-Then the file "front.html" can be opened in the folder "front" and the site will operate
+The final command "node backend.js" will start the backend server on your computer, and to stop running the server press "ctrl-c" or close the terminal.
+
+#### Showing the page
+
+After the terminal commands have been executed, open the file explorer and open /resume_site/frontend/front.html.  This file will open on a web browser and can be viewed.
